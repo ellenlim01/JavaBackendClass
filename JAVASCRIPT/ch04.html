@@ -12,11 +12,11 @@
       var b = "10"; //문자열
 
       console.log(a + a);
-      console.log(b + b);
-      console.log(a + b);
-      console.log(a + a + b);
+      console.log(b + b); //위치에 따라 메소드와 함수로 분류됨, 메소드는 객체안에 있음
+      console.log(a + parseInt(b)); //문자에서 숫자로 형변환 방법 parseInt: 123a456 -> 123
+      console.log(a + a + Number(b)); // 123a456-> NaN, 대문자로 시작
       console.log(a + b + a);
-      console.log(b + a + a);
+      console.log(b + (a + a));
     </script>
   </body>
 </html>
