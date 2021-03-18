@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*주석으로 사용*/
+      * {
+        padding: 0;
+        margin: 0; /* 모든 태그 선택자*/
+      }
+      .cls1 {
+        color: red;
+        font-size: 20px;
+      }
+      #id1 {
+        /* #을 쓰면 무조건 아이디만 검색,id는 문서 안에서 유일해야하고
+        class는 여러개를 쓰고 싶을 때 쓰는 것*/
+        font-weight: bold;
+      }
+
+      span {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="color: red; font-size: 20px">안녕하세요</div>
+    <div class="cls1">안녕하세요</div>
+    <div id="id1">안녕하세요</div>
+    <span>안녕하세요</span>
+  </body>
+</html>

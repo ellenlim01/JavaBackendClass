@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="txt" value="안녕하세요" />
+    <!--내가 직접 적을 때마다
+    value에 값이 추가되고 있는 것-->
+    <script>
+      // 위에다가 두면 null, error 발생/ 화면 만들어지는 속도 느려짐
+      var txtElem = document.getElementById("txt");
+      console.log(txtElem);
+      txtElem.value = "Hello"; //'를 주로 사용. 중간에 들어가야하면"를 사용
+
+      var txtElem2 = document.getElementById("txt");
+      console.log(txtElem2.value);
+    </script>
+  </body>
+</html>

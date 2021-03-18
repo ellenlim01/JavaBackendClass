@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="text/javascript">
+      function validateCheck() {
+        var id = $(#muyaho);
+        if (!id.val()) {
+          alert("아이디를 입력해주세요");
+          id.focus();
+          return;
+        }
+        var regExpId = new RegExp("^[a-z]$,{4,8}");
+        if (regExpId.exec(id.val()) == null) {
+          alert("아이디는 영소문자 4자리~8자리로 입력해주세요");
+          id.focus();
+          id.val("");
+          return;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>아이디 <input id="muyaho" /></div>
+    <div><button onclick="validateCheck()">입력</button></div>
+    <a href="https://naver.com">네이버로 가기</a>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 50%;
+      }
+      table,
+      td {
+        border: 1px solid plum;
+        border-collapse: collapse;
+      }
+      /*
+      .td1 {
+        width: 110px;
+      }
+      .td2 {
+        width: 150px;
+      }
+      td:first-child { width: 50px; }
+      td:last-child { width: 100px; }
+      td:nth-child(2) { width: 100px; }
+      */
+      td:not(:first-child) {
+        background-color: powderblue;
+      } /*first빼고 전부 다를 의미함*/
+      tr:first-child > td {
+        /* <는 직속일 때만 가능*/
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="td1">Firstname</td>
+        <td class="td2">Lastname</td>
+        <td class="td3">Savings</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>1,000원</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>3,000원</td>
+      </tr>
+    </table>
+  </body>
+</html>

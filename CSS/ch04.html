@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body { font-size: 16px; }
+    .cls1 { font-size: 1.4em; padding: 1em; } /*20px 보다 1.4배 커진 것, 
+    폰트 사이즈 상속 가능 padding은 계산된 갑을 기준으로 사용 만약 폰트 사이즈가 없고 padding만 있다면 
+    바디에서 받은 값으로만 계산*/
+    .cls2 { font-size: 1.4em; }
+    .cls2_1 { font-size: 1.4em; }
+    .cls3 { font-size: 1.4rem; }
+    .cls4 { font-size: 1.4rem; } /* body의 기본 폰트 사이즈는16px, 비율로 계산, 
+    rem의 기준은 무조건 body*/
+  </style>
+</head> 
+<body>
+  원래크기
+  <div class="cls1">
+    안녕하세요
+    <div class="cls2">
+      안녕하세요
+      <div class="cls2_1">
+        안녕하세요
+      </div>
+    </div>
+    <div class="cls3">
+    Hello
+      <div class="cls4">
+      Hello
+    </div>
+    Hello
+  </div>
+</body>
+</html>

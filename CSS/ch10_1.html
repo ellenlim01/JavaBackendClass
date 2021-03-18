@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cls1 {
+        position: relative; /* 부모역할 가능*/
+        background-color: goldenrod;
+        height: 300px;
+        width: 300px;
+        margin: 100px;
+        top: 20px; /* 내 위에 20만큼의 마진을 만들거야*/
+      }
+      .cls2 {
+        position: absolute; /*부모기준으로*/
+        background-color: green;
+        height: 100px;
+        width: 100px;
+        left: 20px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cls1">
+      <div class="cls2"></div>
+    </div>
+  </body>
+</html>

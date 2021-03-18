@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        height: 500px;
+      }
+      .parent {
+        background-color: aquamarine;
+        height: 50%;
+        width: 100%;
+        max-width: 600px;
+        max-height: 400px;
+      }
+      .child {
+        background-color: aqua;
+        height: 90%; /* 위에 크기가 달라지면 자동으로 달라짐*/
+        width: 50%;
+        text-align: justify;
+      }
+      .right.left {
+        /* >를 주는 순간 바로 직속만 적용*/
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="right left" id="pk">랄라라라</span>
+    <div class="parent">
+      <div class="child">하이루</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* head 안에 위치하도록*/
+      div.center {
+        text-align: center;
+        color: red;
+      }
+      div .right {
+        text-align: right;
+        color: blue;
+      }
+      div > .left {
+        text-align: left;
+        color: pink;
+      }
+      div#pk {
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">첫번째</div>
+    <div id="pk">두번째</div>
+    <div>세번째</div>
+    <div>
+      <p class="right">네번째</p>
+    </div>
+    <p class="right">다섯번째</p>
+    <div>
+      <section>
+        <div class="left">여섯번째</div>
+        <div class="right">일곱번째</div>
+      </section>
+      <div class="left right">여덟번째</div>
+    </div>
+  </body>
+</html>

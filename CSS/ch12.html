@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent {
+        display: flex;
+      }
+      #container {
+        flex-grow: 1; /*부모의 비중으로 얼마나 가져가는가, 부모중에 flex가 있으면 flex-grow가 적용됨*/
+        background-color: blueviolet;
+        height: 200px;
+        display: flex; /*div가 bock tag임에도 옆으로 나옴*/
+        flex-direction: column; /*위에서 아래로 나옴*/
+        justify-content: space-evenly; /*정방향을 컨트롤할 때 사용, 
+      space around: 똑같은 비율로 둘러싸여진 공간이 생김
+      space between:똑같은 비율로 떨어져있음*/
+        align-items: flex-start;
+      }
+      #container2 {
+        display: flex;
+        flex-grow: 1;
+        background-color: brown;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+      </div>
+      <div id="container2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+      </div>
+    </div>
+  </body>
+</html>
