@@ -7,6 +7,19 @@
     <title>Join</title>
   </head>
   <body>
-    1
+    <h1>Join</h1>
+    <div>
+      <a href="javascript:history.back();">
+        <input type="button" value="뒤로가기" />
+      </a>
+
+      <input type="button" value="뒤로가기" onclick="goToBack();" />
+    </div>
+    <div>
+      <div>비밀번호 : <input type="password" id="pw1" /></div>
+      <div>비밀번호확인 : <input type="password" id="pw2" /></div>
+      <div><input type="button" value="회원가입" onclick="join();" /></div>
+    </div>
+    <script src="common.js"></script>
   </body>
 </html>
