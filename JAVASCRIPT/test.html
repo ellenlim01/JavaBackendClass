@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="common.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form action="주소값" method="어떤 방식으로 날아갈지">
+        <div>
+          <label>아이디 :<input type="text" id="txtID" /></label>
+          <label>비밀번호 :<input type="password" id="txtPw" /></label>
+        </div>
+        <div>
+          성별:
+          <label>여성<input type="radio" name="gender" checked /> </label>
+          <label>남성<input type="radio" name="gender" /></label>
+          외계인<input type="radio" name="gender2" />
+        </div>
+        <input type="reset" value="초기화" /><!--form 태그안에서만 입력-->
+        <input type="submit" value="전송" />
+        <button>전송</button>
+        <a href="test2.html"><input type="button" value="join" /></a>
+        <input type="button" value="login" onclick="clkLogin();" />
+      </form>
+    </div>
+  </body>
+</html>
