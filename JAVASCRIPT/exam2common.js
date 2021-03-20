@@ -10,3 +10,4 @@ function clkLogin() {
     return;
   }
 }
+<a href="javascript:history.back();">뒤로가기</a>
