@@ -117,6 +117,7 @@ html , body {
 #menu1PageSub>li:last-child {
   background:darkkhaki;
   flex-grow: 1;
+  width: 100%;
   flex-basis: 0;
   display: flex;
   justify-content: center;
