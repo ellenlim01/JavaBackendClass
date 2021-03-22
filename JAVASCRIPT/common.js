@@ -1,25 +1,31 @@
-function clkLogin() {
-  var txtIdElem = document.getElementById("txtID");
-  console.log(txtIdElem.value);
-  if (txtIdElem.value === "") {
+function login() {
+  var loginId = document.getElementById("loginId");
+  if (loginId.value === "") {
     alert("로그인을 할 수 없습니다.");
-    return;
   }
-  var txtPwElem = document.getElementById("txtPw");
-  if (txtPwElem.value === "") {
-    alert("로그인을 할 수 없습니다2.");
-    return; //함수 종료라고 생각
+  var loginPw = document.getElementById("loginPw");
+  if (loginPw.value === "") {
+    alert("로그인을 할 수 없습니다.");
+  } else {
+    location.href = "main.html";
   }
-  location.href = "main.html";
+}
+
+function goBack() {
+  history.back();
 }
 
 function join() {
-  var pwElem1 = document.getElementById("pw1");
-  var pwElem2 = document.getElementById("pw2");
-
-  if (pwElem1.value !== pwElem2.value) {
-    alert("비밀번호를 확인해주세요.");
-    return;
+  var joinId = document.getElementById("joinId");
+  var joinPw1 = document.getElementById("joinPw1");
+  var joinPw2 = document.getElementById("joinPw2");
+  if (joinId.value === "" || joinPw1.value === "" || joinPw2.value === "") {
+    alert("회원가입을 할 수 없습니다.");
+  } else {
+    if (joinPw1.value !== joinPw2.value) {
+      alert("비밀번호를 확인해주세요.");
+    } else {
+      location.href = "login.html";
+    }
   }
-  location.href = "login.html";
 }
