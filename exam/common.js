@@ -1,4 +1,4 @@
-function login() {
+function Login() {
   var loginId = document.getElementById("loginId");
   var loginPw = document.getElementById("loginPw");
   if (loginId.value === "" || loginPw.value === "") {
@@ -6,6 +6,9 @@ function login() {
   } else {
     location.href = "main.html";
   }
+}
+function goJoin() {
+  location.href = "join.html";
 }
 
 function goBack() {
@@ -16,7 +19,7 @@ function join() {
   var joinId = document.getElementById("joinId");
   var joinPw1 = document.getElementById("joinPw1");
   var joinPw2 = document.getElementById("joinPw2");
-  if (joinId.value === "" || joinPw1.value === "") {
+  if (joinId.value === "" || joinPw1.value === "" || joinPw2.value === "") {
     alert("회원가입을 할 수 없습니다.");
   } else if (joinPw1.value !== joinPw2.value) {
     alert("비밀번호를 확인해주세요.");

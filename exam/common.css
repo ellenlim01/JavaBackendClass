@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  color: white;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+header,
+footer {
+  flex-grow: 1;
+  background-color: seagreen;
+}
+section {
+  flex-grow: 8;
+  background-color: steelblue;
+  display: flex;
+}
+#menu {
+  flex-grow: 1;
+}
+#mainPage {
+  flex-grow: 4;
+  background-color: sandybrown;
+  display: flex;
+}
+#main1 {
+  flex-grow: 3;
+  background-color: sandybrown;
+}
+#mainSub {
+  flex-grow: 1;
+  background-color: coral;
+  display: flex;
+  flex-direction: column;
+}
+#sub1 {
+  flex-grow: 1;
+  background-color: coral;
+}
+#sub2 {
+  flex-grow: 1;
+  background-color: cornflowerblue;
+}
