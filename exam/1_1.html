@@ -12,11 +12,11 @@
         flex-direction: column;
         padding: 0;
         margin: 0;
-        box-sizing: border-box;
         height: 100%;
         width: 100%;
       }
       * {
+        box-sizing: border-box;
       }
       header {
         height: 120px;
@@ -24,11 +24,11 @@
         width: 100%;
         background-color: #1abc9c;
       }
-      #content {
-        overflow: auto;
-        flex-grow: 1;
+      section {
+        overflow-y: auto; /*세로방향만*/
+        flex-grow: 1; /*사용하지 않는 남는 공간에서의 비율로 가져가라 혼자만 있으면 남는공간을 혼자서 다 차지하게 됨*/
       }
-      #cat {
+      section img {
         float: right;
       }
       table {
@@ -55,7 +55,7 @@
   <body>
     <div id="container">
       <header><div>Exam1</div></header>
-      <div id="content">
+      <section>
         <a href="http://www.google.com" target="blank">
           <img id="cat" src="cat.jpg" />
         </a>
@@ -134,7 +134,7 @@
             </tr>
           </table>
         </div>
-      </div>
+      </section>
       <footer>코리아IT아카데미</footer>
     </div>
   </body>

@@ -1,4 +1,5 @@
 function Login() {
+  //console.log('id값: ' + loginId.vaule);
   var loginId = document.getElementById("loginId");
   var loginPw = document.getElementById("loginPw");
   if (loginId.value === "" || loginPw.value === "") {
