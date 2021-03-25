@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+  background-color: goldenrod;
+  border-radius: 0.25rem;
+  transition: all 0.3s; /*지연효과, 0.3초동안 진행을 하라는 뜻*/
+  display: inline-block; /*: inline의 성격과 block의 성격을 가지고 있음. 
+  span을 사용하면 글씨만 들어가고 배경은 들어가지 않음*/
+}
+a:hover {
+  opacity: 0.6;
+}
+.breweries > ul > li {
+  position: relative;
+  border: 1px solid grey;
+}
+.breweries > ul > li > p {
+  line-height: 1.5;
+  padding: 1rem 0.75rem; /*위아래 좌우*/
+  color: #666;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.breweries {
+  padding: 2rem;
+  height: 100%;
+}
+.breweries > ul {
+  display: grid; /*꼭 적을 것*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*꼭 적을 것*/
+  gap: 1rem;
+}
+.breweries > ul > li {
+  border: 1px solid #e2e2e2;
+  border-radius: 0.5rem;
+  padding-bottom: 2.8rem;
+}
+.breweries > ul > li > figure {
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  max-height: 220px;
+}
+.breweries > ul > li > figure > img {
+  width: 100%;
+}
+.breweries > ul > li > figure > figcaption {
+  position: absolute; /*static이 안된 부모를 찾음*/
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+.breweries > ul > li > figure > figcaption > h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+}
+footer {
+  background-color: darkgrey;
+  text-align: center;
+  color: #fff;
+  padding: 0.75rem;
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+}
+.breweries > ul > li > a {
+  padding: 0.5rem 1rem;
+}

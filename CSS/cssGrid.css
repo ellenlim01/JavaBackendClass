@@ -1,0 +1,27 @@
+body {
+  padding: 20;
+}
+.container {
+  /*height: 900px;
+  grid(블락처럼 동작) inline-grid(옆으로 배열)
+  grid-template-columns: 1fr 3fr 1fr;*/
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(80px, 1fr)
+  ); /*auto fit은 꽉채움*/
+  grid-template-rows: minmax(100px, 300px) 300px 500px;
+  row-gap: 10px;
+  column-gap: 5px;
+  /*1fr 1fr 1fr을 주면 3개의 크기가 같아지라는 뜻,= repeat(3, 1fr)
+    가로 값은 자동으로 다 차지하게 됨-> 컨테이너에 width값 설정해서 해결
+    repeat(2, 1fr 2fr 3fr)도 가능
+    auto: 1fr과 함께 있으면 자신이 필요한만큼만 차지
+  grid-template-rows: minmax(100px auto) 500px; overflow되면 hidden시킴
+  minmax:부모크가 얼마인지 상과없이 커짐*/
+}
+
+.item {
+  border: 1px solid black;
+  background-color: cornflowerblue;
+}
