@@ -28,6 +28,14 @@ a:hover {
   line-height: 1.5;
   padding: 1rem 0.75rem; /*위아래 좌우*/
   color: #666;
+
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 54px;
 }
 ul {
   padding: 0;
@@ -36,7 +44,7 @@ ul {
 }
 .breweries {
   padding: 2rem;
-  height: 100%;
+  padding-bottom: 80px;
 }
 .breweries > ul {
   display: grid; /*꼭 적을 것*/
@@ -46,7 +54,7 @@ ul {
 .breweries > ul > li {
   border: 1px solid #e2e2e2;
   border-radius: 0.5rem;
-  padding-bottom: 2.8rem;
+  padding-bottom: 0.5rem;
 }
 .breweries > ul > li > figure {
   overflow: hidden;
@@ -80,4 +88,5 @@ footer {
 }
 .breweries > ul > li > a {
   padding: 0.5rem 1rem;
+  margin: 0.5rem;
 }
